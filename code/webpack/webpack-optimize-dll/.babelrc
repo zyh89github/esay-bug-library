@@ -1,0 +1,7 @@
+{
+  // env项是借助插件babel-preset-env，下面这个配置说的是babel对es6,es7,es8进行转码
+  "presets": [
+    "env"
+  ],
+  "plugins": ["transform-react-jsx"]
+}
