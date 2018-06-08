@@ -1,0 +1,25 @@
+{
+  "name": "webpack-optimize-happypack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "webpack": "node_modules/.bin/webpack --config webpack.config.js"
+  },
+  "author": "mjgao@isscloud.com",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.4",
+    "babel-preset-env": "^1.7.0",
+    "css-loader": "^0.28.11",
+    "extract-text-webpack-plugin": "^2.1.2",
+    "happypack": "^5.0.0",
+    "style-loader": "^0.21.0",
+    "webpack": "^2.4.1",
+    "webpack-parallel-uglify-plugin": "^1.1.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4"
+  }
+}
