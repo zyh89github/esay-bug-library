@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>选项卡页面布局</title>
+</head>
+<body>
+	<!-- 选项卡样式 -->
+	<style type="text/css">
+		body { font-family: tahoma,arial,'Hiragino Sans GB','微软雅黑',sans-serif;
+		    color: #6f7b91; font-size: 14px; min-width: 1200px; }
+		ul { list-style: none; padding: 0; margin: 0; }
+		.clear:after, .clear:before { content: ""; display: table; }
+		.clear:after { clear: both; }
+
+		.info-list { width: 860px; }
+		.info-list .info-title li { width: 118px; height: 40px; border: 1px solid #eaeeee;
+			text-align: center; line-height: 40px; color: #707a87; background: #f7f9f9;
+			margin-right: -1px; float: left; cursor: pointer; position: relative; }
+		.info-list .info-title li.active { background: #fff; height: 41px; color: #e15671; 
+			border-bottom: 0; }
+		.info-list .info-title li i { width: 120px; height: 2px; background: #e15671; position: absolute;
+			left: -1px; top: -1px; display: none; }
+		.info-list .info-title li.active i { display: block; }
+		.info-list .info-text { border: 1px solid #eaeeee; padding: 18px; line-height: 26px;
+			background-color: #fff; margin-top: -1px; }
+		.info-list .info-text li { display: none; }
+		.info-list .info-text li.active { display: block; }
+	</style>
+
+	<!-- 选项卡结构 -->
+	<div class="info-list">
+		<ul class="info-title clear">
+			<li class="active"><i></i>PAAS产品介绍</li>
+			<li><i></i>IAAS产品介绍</li>
+		</ul>
+		<ul class="info-text">
+			<li class="active">PaaS是Platform-as-a-Service的缩写，意思是平台即服务。 把服务器平台作为一种服务提供的商业模式。通过网络进行程序提供的服务称之为SaaS(Software as a Service)，而云计算时代相应的服务器平台或者开发环境作为服务进行提供就成为了PaaS(Platform as a Service)。</li>
+			<li>IaaS（Infrastructure as a Service），即基础设施即服务。
+			消费者通过Internet 可以从完善的计算机基础设施获得服务。这类服务称为基础设施即服务。基于 Internet 的服务（如存储和数据库）是 IaaS的一部分。Internet上其他类型的服务包括平台即服务（Platform as a Service，PaaS）和软件即服务（Software as a Service，SaaS）。PaaS提供了用户可以访问的完整或部分的应用程序开发，SaaS则提供了完整的可直接使用的应用程序，比如通过 Internet管理企业资源。</li>
+		</ul>
+	</div>
+</body>
+</html>
